@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
     return {
         plugins: [
             laravel({
+                input: [],
                 refresh: true,
             }),
             tailwindcss(),
