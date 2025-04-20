@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     --font-sans: "Roboto";
     --color-txt-first: #1f2937;
     --color-primary-300: #3b82f6;
     --color-txt-second: #4a5462;
-}
-
-body {
-    color: var(--color-txt-first);
+    --color-dark-bg: #1f2937;
 }
