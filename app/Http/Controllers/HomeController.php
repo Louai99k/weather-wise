@@ -2,12 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Constants;
+use App\Http\Services\WeatherService;
+
 class HomeController
 {
     public function index()
     {
-        $date = date("H:m | F d, o");
+        $data = WeatherService::getWeatherData(
+            Constants::MAKKAH['lat'],
+            Constants::MAKKAH['lng'],
+            Constants::MAKKAH['cityRaw'],
+            Constants::MAKKAH['countryCode'],
+        );
 
-        return view("index", ["date" => $date]);
+        return view('index', $data);
     }
 }

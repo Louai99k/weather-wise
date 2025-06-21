@@ -1,0 +1,71 @@
+<?php
+
+namespace App;
+
+abstract class Constants
+{
+    public const WMO_CODES = [
+        0 => ['weatherStatus' => 'Clear Sky','weatherIcon' => 'sunny'],
+        1 => ['weatherStatus' => 'Mainly Clear','weatherIcon' => 'sunny'],
+        2 => ['weatherStatus' => 'Partly Cloudy','weatherIcon' => 'sun-cloud'],
+        3 => ['weatherStatus' => 'Overcast','weatherIcon' => 'cloudy'],
+        45 => ['weatherStatus' => 'Foggy','weatherIcon' => 'sunny'],
+        46 => ['weatherStatus' => 'Foggy','weatherIcon' => 'sunny'],
+        47 => ['weatherStatus' => 'Foggy','weatherIcon' => 'sunny'],
+        48 => ['weatherStatus' => 'Depositing rime fog','weatherIcon' => 'snow-flake'],
+        49 => ['weatherStatus' => 'Depositing rime fog','weatherIcon' => 'snow-flake'],
+        50 => ['weatherStatus' => 'Light Drizzle','weatherIcon' => 'water-drop'],
+        51 => ['weatherStatus' => 'Light Drizzle','weatherIcon' => 'water-drop'],
+        52 => ['weatherStatus' => 'Moderate Drizzle','weatherIcon' => 'water-drop'],
+        53 => ['weatherStatus' => 'Moderate Drizzle','weatherIcon' => 'water-drop'],
+        54 => ['weatherStatus' => 'Heavy Drizzle','weatherIcon' => 'water-drop'],
+        55 => ['weatherStatus' => 'Heavy Drizzle','weatherIcon' => 'water-drop'],
+        56 => ['weatherStatus' => 'Freezing Drizzle','weatherIcon' => 'water-drop'],
+        57 => ['weatherStatus' => 'Freezing Drizzle','weatherIcon' => 'water-drop'],
+        58 => ['weatherStatus' => 'Raining','weatherIcon' => 'rainy'],
+        59 => ['weatherStatus' => 'Raining','weatherIcon' => 'rainy'],
+        60 => ['weatherStatus' => 'Slightly Raining','weatherIcon' => 'rainy'],
+        61 => ['weatherStatus' => 'Slightly Raining','weatherIcon' => 'rainy'],
+        62 => ['weatherStatus' => 'Moderate Raining','weatherIcon' => 'rainy'],
+        63 => ['weatherStatus' => 'Moderate Raining','weatherIcon' => 'rainy'],
+        64 => ['weatherStatus' => 'Raining','weatherIcon' => 'rainy'],
+        65 => ['weatherStatus' => 'Raining','weatherIcon' => 'rainy'],
+        66 => ['weatherStatus' => 'Freezing Rain','weatherIcon' => 'rainy'],
+        67 => ['weatherStatus' => 'Freezing Rain','weatherIcon' => 'rainy'],
+        70 => ['weatherStatus' => 'Slightly Snowing','weatherIcon' => 'snowy'],
+        71 => ['weatherStatus' => 'Slightly Snowing','weatherIcon' => 'snowy'],
+        72 => ['weatherStatus' => 'Moderately Snowing','weatherIcon' => 'snowy'],
+        73 => ['weatherStatus' => 'Moderately Snowing','weatherIcon' => 'snowy'],
+        74 => ['weatherStatus' => 'Snowing','weatherIcon' => 'snowy'],
+        75 => ['weatherStatus' => 'Snowing','weatherIcon' => 'snowy'],
+        76 => ['weatherStatus' => 'Diamond dust','weatherIcon' => 'snow-flake'],
+        77 => ['weatherStatus' => 'Snow grains','weatherIcon' => 'snowy'],
+        80 => ['weatherStatus' => 'Rain shower','weatherIcon' => 'rainy'],
+        81 => ['weatherStatus' => 'Rain shower','weatherIcon' => 'rainy'],
+        82 => ['weatherStatus' => 'Rain shower','weatherIcon' => 'rainy'],
+        83 => ['weatherStatus' => 'Rain shower','weatherIcon' => 'rainy'],
+        84 => ['weatherStatus' => 'Rain shower','weatherIcon' => 'rainy'],
+        85 => ['weatherStatus' => 'Snow shower','weatherIcon' => 'snowy'],
+        86 => ['weatherStatus' => 'Snow shower','weatherIcon' => 'snowy'],
+        87 => ['weatherStatus' => 'Snow shower','weatherIcon' => 'snowy'],
+        88 => ['weatherStatus' => 'Snow shower','weatherIcon' => 'snowy'],
+        89 => ['weatherStatus' => 'Snow shower','weatherIcon' => 'snowy'],
+        90 => ['weatherStatus' => 'Snow shower','weatherIcon' => 'snowy'],
+        91 => ['weatherStatus' => 'Thunderstorm','weatherIcon' => 'thunderstorm'],
+        92 => ['weatherStatus' => 'Thunderstorm','weatherIcon' => 'thunderstorm'],
+        93 => ['weatherStatus' => 'Thunderstorm','weatherIcon' => 'thunderstorm'],
+        94 => ['weatherStatus' => 'Thunderstorm','weatherIcon' => 'thunderstorm'],
+        95 => ['weatherStatus' => 'Thunderstorm','weatherIcon' => 'thunderstorm'],
+        96 => ['weatherStatus' => 'Thunderstorm','weatherIcon' => 'thunderstorm'],
+        97 => ['weatherStatus' => 'Thunderstorm','weatherIcon' => 'thunderstorm'],
+        98 => ['weatherStatus' => 'Thunderstorm','weatherIcon' => 'thunderstorm'],
+        99 => ['weatherStatus' => 'Thunderstorm','weatherIcon' => 'thunderstorm'],
+    ];
+
+    public const MAKKAH = [
+        'lat' => '21.42664',
+        'lng' => '39.82563',
+        'cityRaw' => 'Makkah',
+        'countryCode' => 'SA'
+    ];
+}
