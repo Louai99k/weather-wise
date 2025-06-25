@@ -12,6 +12,14 @@ class ApiController
     {
         $term = $req->query('search');
 
+        if (gettype($term) != 'string') {
+            return "";
+        }
+
+        if (strlen($term) < 3) {
+            return "";
+        }
+
         $res = Http::get("https://geocoding-api.open-meteo.com/v1/search?name=$term&count=5&language=en&format=json")->json();
 
         if (isset($res['results'])) {

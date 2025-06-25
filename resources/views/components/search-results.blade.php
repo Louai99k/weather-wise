@@ -1,4 +1,4 @@
-<ul id="search-res" x-show="open"
+<ul id="search-res"
     class="absolute mt-2 w-full border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-700 rounded-lg border px-4 py-2">
     @if (count($items) > 0)
         @foreach ($items as $item)
