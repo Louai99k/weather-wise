@@ -3,6 +3,7 @@
 namespace App\Http\Services;
 
 use App\Constants;
+use DateTimeZone;
 use Illuminate\Support\Facades\Http;
 
 class WeatherService
@@ -10,11 +11,12 @@ class WeatherService
     public static function getWeatherData($lat, $lng, $cityRaw, $countryCode)
     {
         $today = date_create();
-        $date = (clone $today)->format('H:m | F d, o');
         $startDate = (clone $today)->modify('this week monday')->format('Y-m-d');
         $endDate = (clone $today)->modify('this week sunday')->format('Y-m-d');
 
         $res = Http::get("https://api.open-meteo.com/v1/forecast?latitude=$lat&longitude=$lng&daily=weather_code,temperature_2m_max,temperature_2m_min&current=temperature_2m,weather_code,wind_speed_10m,surface_pressure,relative_humidity_2m&timezone=auto&start_date=$startDate&end_date=$endDate")->json();
+
+        $date = date_create('now', new DateTimeZone($res['timezone']))->format('H:m | F d, o');
 
         $weatherCode = $res['current']['weather_code'];
 
