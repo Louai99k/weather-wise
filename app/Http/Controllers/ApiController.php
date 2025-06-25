@@ -41,6 +41,16 @@ class ApiController
         $lng = $req->query('lng');
         $lat = $req->query('lat');
 
+        $req->session()->put(
+            'lastCity',
+            [
+                'lat' => $lat,
+                'lng' => $lng,
+                'cityRaw' => $cityRaw,
+                'countryCode' => $countryCode
+            ]
+        );
+
         $weatherData = WeatherService::getWeatherData($lat, $lng, $cityRaw, $countryCode);
 
         return view('pages.landing', $weatherData);
