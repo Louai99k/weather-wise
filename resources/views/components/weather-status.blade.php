@@ -12,22 +12,22 @@
     @break
 
     @case('snowy')
-        <x-icons.weather.rain-cloud />
+        <x-icons.weather.snowy />
     @break
 
     @case('thunderstorm')
-        <x-icons.weather.rain-cloud />
+        <x-icons.weather.thunderstorm />
     @break
 
     @case('sun-cloud')
-        <x-icons.weather.rain-cloud />
+        <x-icons.weather.sun-cloud />
     @break
 
     @case('snow-flake')
-        <x-icons.weather.rain-cloud />
+        <x-icons.weather.snow-flake />
     @break
 
     @case('water-drop')
-        <x-icons.weather.rain-cloud />
+        <x-icons.weather.water-drop />
     @break
 @endswitch
