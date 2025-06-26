@@ -11,8 +11,8 @@
                         width="32" />
                 </div>
                 <div class="flex flex-col">
-                    <span>{{ $item['name'] }}</span>
-                    <span class="text-txt-second dark:text-gray-400">{{ $item['country'] }}</span>
+                    <span>{{ $item['name'] }}{{ isset($item['admin1']) ? ', ' . $item['admin1'] : '' }}</span>
+                    <span class="text-txt-second dark:text-gray-400">{{ $item['country'] ?? null }}</span>
                 </div>
             </li>
         @endforeach
